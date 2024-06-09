@@ -1,32 +1,51 @@
 body{
-    background-color: gray;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: white;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 header{
     margin: 0 auto;
     line-height: 80px;
-    width: 1048px;
-    height: 450px;
+    width: 100%;
+    height: 500px;
     padding: 0 10px;
     float: none;
     background-repeat: no-repeat;
-    background-image: url(background.png);
+    background-image: url(Assets/background.png);
     background-size: 100%;
+}
+header section{
+    width: 1048px;
+    margin: 0 auto;
+    
 }
 main{
     margin: 0 auto;
     width: 1048px;
     padding: 10px;
-    background-color: white
+    background-color: white;
+    height: 1300px;
+    flex: 1;
 }
 footer{
     margin: 0 auto;
-    width: 1048px;
+    width: 100%;
     padding: 0 10px;
     background-color: rgb(255, 184, 53);
-    height: 50px;
+    height: 50pt;
     line-height: 50px;
     color: white;
+    bottom: 0;
 }
 ul{
     list-style-type: none;
@@ -50,25 +69,232 @@ header li a{
     color: gray;
 }
 header li a.utama{
-    color: rgb(255, 184, 53);;
+    color: rgb(255, 184, 53);
     text-decoration: underline;
 }
 article.about h2{
-    font-size: 32px;
+    font-size: 50px;
+}
+article.about p{
+    line-height: 50px;
 }
 article.about{
     float: none;
     width: 600px;
     padding-left: 20px;
-    font-size: 18px;
-    margin: 1px;
-}
-li{
-    display: inline;
+    font-size: 16px;
+    padding-top: 0px;
+    color: gray;
 }
 header li a:hover{
     color: rgb(255, 184, 53);
 }
+header span a{
+    color: transparent;
+    display: block;
+    float: right;
+    padding: 1px;
+    margin-top: 15px;
+    margin-right: 8px;
+    background-image: url(Assets/profil.png);
+    background-size: 120%;
+    background-repeat: no-repeat;
+    border-radius: 100px;
+    line-height: 40px;
+    background-position: center;
+
+}
+header span{
+    padding:10px;
+    height: 40px;
+    line-height: 40px;
+}
+header p.lanjut a{
+    text-align: center;
+    display: block;
+    color: white;
+    background-color: rgb(255, 184, 53);
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+}
+header p.lanjut a:hover{
+    border: 1px solid gray;
+}
 span{
     float: right;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+li{
+    display: inline;
+}
+
+
+
+
+main span a{
+    margin-right: 50px;
+    color: rgb(255, 184, 53);
+}
+
+main section{
+    padding-left: 20px;
+    width: 100%;
+}
+main section.fitur ul{
+    margin: 40px 0;
+    padding: 0px;
+    margin-bottom: 60px;
+
+}
+main section.fitur li a{
+   background-color: #ffcf80;
+   color: #535353;
+   padding: 20px 45px;
+   margin-right: 20px;
+   border-radius: 10px;
+   font-size: 14px;
+   padding-left: 55px;
+   padding-right: 40px;
+   margin-bottom: 40px;
+}
+main section.fitur{
+    margin-top: 100px;
+}
+main section.dokter p.judul{
+    margin-top: 100px;
+}
+main section.produk p.judul{
+    margin-top: 380px;
+}
+main section.artikel p.judul{
+    margin-top: 380px;
+}
+
+
+section.dokter img{
+    width: 300px;
+    height: 170px;
+    size: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+}
+section.dokter article{
+    margin-top: 10px;
+    background-color: white;
+    width: 300px;
+    border-radius: 20px;
+    float: left;
+    margin-right: 45px;
+    margin-bottom: 40px;
+    box-shadow: 1px 2px lightgray;
+}
+section.dokter article h4{
+    padding-left: 10px;
+    margin: 5px;
+    padding-bottom: 5px;
+    color: #E4A43C;
+}
+section.dokter article p{
+    padding-left: 10px;
+    margin: 5px;
+    padding-bottom: 5px;
+    font-size: 12px;
+    color: #535353;
+}
+
+
+
+
+section.produk img{
+    width: 300px;
+    height: 170px;
+    size: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+}
+section.produk article{
+    margin-top: 10px;
+    background-color: white;
+    width: 300px;
+    border-radius: 20px;
+    float: left;
+    margin-right: 45px;
+    margin-bottom: 40px;
+    box-shadow: 1px 2px lightgray;
+}
+section.produk article h4{
+    padding-left: 10px;
+    margin: 5px;
+    padding-bottom: 5px;
+    color: #535353;
+}
+section.produk article p{
+    padding-left: 10px;
+    margin: 5px;
+    padding-bottom: 5px;
+    font-size: 12px;
+    color: #FFBA49;
+}
+p.bintang img{
+    width: 120px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+}
+
+
+
+
+main section.artikel ul{
+    margin: 40px 0;
+    padding: 0px;
+}
+section.artikel img{
+    height: 150px;
+    width: 250px;
+    size: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    float: left;
+    
+}
+section.artikel article{
+    margin-top: 10px;
+    background-color: white;
+    width: 990px;
+    height: 150px;
+    border-radius: 20px;
+    margin-right: 45px;
+    margin-bottom: 40px;
+    box-shadow: 1px 2px lightgray;
+
+}
+section.artikel article h4{
+    padding-left: 260px;
+    margin: 5px;
+    padding-bottom: 5px;
+    color: #535353;
+    padding-top: 10px;
+}
+section.artikel article p{
+    padding-left: 260px;
+    margin: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 12px;
+    color: #FFBA49;
+}
+article.artikel span{
+    float: none;
+    padding-left: 10px;
+    color: gray;
 }
