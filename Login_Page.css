@@ -76,8 +76,8 @@
 .container .remember-forgot label input{
     color: white;
     margin-right: 3px;
+    margin-left: 10px;
     align-content: center;
-
 }
 .container .remember-forgot label::after{
     content: "";
