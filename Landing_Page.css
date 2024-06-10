@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;    
+    background-image: url(Assets/background\ 2.jpg);
+    backdrop-filter: blur(2px);
+    
+}
+.con-header{
+    display: flex;
+    position:relative;
+    width: 100%;
+    height: 100px;
+    letter-spacing: 0.5;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.con-header h1{
+    color: white;
+    cursor: default;
+}
+.navbar li{
+    display: inline;
+    margin-right: 20px;
+    letter-spacing: 0.2px;
+}
+.con-header .navbar li a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.navbar li a::after{
+    content: "";
+    background-color: white;
+    height: 2px;
+    position: absolute;
+    width: 0;
+    left: 0;
+    bottom: -1px;
+}
+.navbar li a:hover::after{
+    width: 60px;
+    transition: ease-in-out 300ms;
+}
+
+.navbar li .spesial:hover::after{
+    width: 95px;
+    transition: ease-in-out 400ms;
+}
+
+.con-header .button{
+    right: -100px;
+}
+.button .register{
+    height: 34px;
+    width: 153px;
+}
+.con-header .button .login{
+    width: 76px;
+    height: 34px;
+}
+.con-header i,.button{
+    position: relative;
+    color: white;
+}
+
+.button .register{
+    background-color: rgb(255, 166, 0);
+    border-radius: 10px;
+    color: white;
+    font-weight: 500;
+    border:none;
+}
+.register:hover{
+    font-weight: 800;
+    letter-spacing: 0.5;
+    cursor: pointer;
+    border:solid 1px orange;
+    box-shadow: inset;
+}
+
+.button .login{
+    background:rgba(255,255,255,0.4);
+    backdrop-filter: blur(10px);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    border: none;
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.login:hover{
+    background:rgba(255,166,0,1);
+    color: white;
+    transition: ease 300ms;
+    cursor: pointer;
+}
+
+/* image 2 */
+
+
+
+
+/* Rectangle 25 */
+
+position: absolute;
+width: 1440px;
+height: 1014px;
+
+background: linear-gradient(270deg, rgba(217, 217, 217, 0) 34.25%, rgba(255, 176, 46, 0.9) 100%);
+
+
+
+
+
