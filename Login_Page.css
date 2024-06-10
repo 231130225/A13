@@ -10,8 +10,9 @@
     align-items: center;
     min-height: 100vh;
     background-image: url("./Assets/background\ image.jpg");
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 .judul{
     display: flex;
