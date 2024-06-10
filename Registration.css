@@ -57,7 +57,8 @@
     color: white;
 }
 .input-box input::placeholder{
-    color: rgba(255,255,255,0.5);
+    color:rgba(255,255,255,0.5);
+
 }
 
 .input-box i{ 
@@ -97,7 +98,7 @@
     cursor: pointer;
 }
 
-.container .remember-forgot a{
+/* .container .remember-forgot a{
     color: white;
     text-decoration: none;
     position: relative;
@@ -114,7 +115,7 @@
 .container .remember-forgot a:hover::after{
     width: 135px;
     transition: ease-out 400ms;
-}
+} */
 
 .container .log-btn{
     width: 100%;
@@ -149,12 +150,12 @@
     background-color: white;
     width: 0;
     height: 1px;
-    left: 243px;
+    left: 278px;
     bottom: 16px;
     outline: none;
 }
 .register a:hover::after{
-    width: 102px;
+    width: 50px;
     transition: ease-in-out 400ms;
 }
 .ex-log{
@@ -191,12 +192,10 @@
 }
 .a{
     display: flexbox;
-    width: 125px;
+    width: 100px;
     float: inline-end;
 
 }
 .b{
-    width: 125px;
+    width: 100px;
 }
-
-
