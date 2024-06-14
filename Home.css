@@ -28,6 +28,12 @@ header section{
     margin: 0 auto;
     
 }
+header section h1:hover{
+    cursor: pointer;
+    color: blanchedalmond;
+    transition: ease-in-out 100ms;
+}
+
 main{
     margin: 0 auto;
     width: 1048px;
@@ -71,7 +77,6 @@ header li a{
 }
 header li a.utama{
     color: rgb(255, 184, 53);
-    text-decoration: underline;
 }
 article.about h2{
     font-size: 50px;
@@ -89,6 +94,7 @@ article.about{
 }
 header li a:hover{
     color: rgb(255, 184, 53);
+    text-decoration: underline;
 }
 header span a{
     display: block;
