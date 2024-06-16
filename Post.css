@@ -159,10 +159,51 @@ main article.dua section div.tiga{
   border-radius: 10px;
 }
 
-main article.satu section.satu div.tiga tr td.satu img{
-  width: 50px;
-  height: 50px;
+main article.satu section.satu div.tiga{
+  float: left;
+  margin-left: 10px;
 }
+
+main article.satu section.satu div.tiga img.satu{
+  width: 40px;
+  height: 40px;
+}
+
+main article.satu section.satu div.tiga img.empat{
+  width: 40px;
+  height: 40px;
+}
+
+main article.satu section.satu div.tiga img.dua{
+  width: 50px;
+  height: 40px;
+}
+
+main article.satu section.satu div.tiga img.tiga{
+  width: 40px;
+  height: 40px;
+}
+
+main article.satu section.satu div.tiga img.satu:hover{
+  width: 45px;
+  height: 45px;
+}
+
+main article.satu section.satu div.tiga img.empat:hover{
+  width: 45px;
+  height: 45px;
+}
+
+main article.satu section.satu div.tiga img.dua:hover{
+  width: 55px;
+  height: 45px;
+}
+
+main article.satu section.satu div.tiga img.tiga:hover{
+  width: 45px;
+  height: 45px;
+}
+
 main article.dua section div.tiga:hover{
   background-color: #FFBA49;
   border: 1px solid white;
