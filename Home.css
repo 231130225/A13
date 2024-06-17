@@ -898,8 +898,43 @@ main p.judul span:hover{
 
 @media (max-width: 479px)
 {
-    section.fitur tr{
-        overflow: auto;
+    main section.fitur{
+        margin-top: 50px;
+    }
+    main section.dokter p.judul{
+        margin-top: 50px;
+    }
+    main section.produk p.judul{
+        margin-top: 50px;
+    }
+    main section.artikel p.judul{
+        margin-top: 50px;
+    }
+
+    main section.fitur p.judul{
+        height: fit-content;
+    }
+    section.fitur table{
+        margin: 0 !important;
+        width: 420px;
+    }
+    section.fitur td{
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    section.fitur td a{
+        width: 60px;
+        height: 60px;
+        margin: 0 !important;
+        padding: 0 !important;
+        text-align: center;
+    }
+    section.fitur td a img{
+        margin-left: 5px;
+    }
+    section.fitur td a p{
+        margin-top: 50px !important;
+        float: none;
     }
     header span a{
         display: none;
@@ -1029,7 +1064,7 @@ main p.judul span:hover{
 
 
     main section.artikel{
-        height: 1100px;
+        height: 1150px;
         width: 450px;
         align-items: center;
     }

@@ -3,28 +3,80 @@ body{
     align-items: center;
     min-height: 100vh;
     background-color: white;
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Varela Round';
     margin: 0;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  header span.open{
+    display: none;
+    color: #818181;
+    width: fit-content;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #FFBA49;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+
+
 header{
-    line-height: 80px;
-    width: 100%;
-    height: 100px;
     padding: 0px;
     float: none;
-    background-repeat: no-repeat;
-    background-color: white;
-    background-size: 100%;
-    border-bottom: 2px solid gray;
-
     display: flex;
     flex-direction: column;
-
+    margin: 0 auto;
+    width: 100%;
+    height: 100px;
+    float: none;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+}
+header section article.header{
+    width: 100%;
+    height: 100px;
 }
 main{
     margin: 0 auto;
@@ -37,7 +89,7 @@ main{
 footer{
     margin: 0 auto;
     width: 100%;
-    background-color: #FFBA49;
+    background-color: rgb(255, 184, 53);
     height: 50pt;
     line-height: 50px;
     color: white;
@@ -46,52 +98,110 @@ footer{
 footer p{
     margin: 10px 20px;
 }
-
 ul{
     list-style-type: none;
 }
-a{
-    text-decoration: none;
-}
-li{
-    display: inline;
-}
-
 header h1{
     float: left;
     width: 160px;
     color: #FFBA49;
     padding-left: 15px;
     font-size: 28px;
+    margin: 30px 0;
 }
 header li{
     float: left;
+    text-align: center;
 }
 header li a{
     display: block;
-    padding: 8px;
-    width: 80px;
+    padding: 0;
+    width: fit-content;
     text-decoration: none;
     color: gray;
+    margin: 40px 30px;
+
 }
-header span a{
-    display: block;
-    float: right;
-    padding: 1px;
-    margin-top: 15px;
-    padding-right: 8px;
-    line-height: 40px;
+header li a.utama{
+    color: #FFBA49;
 }
-header span a img{
-    width: 65px;
-    height: 55px;
-    padding-right: 10px;
+header li a.utama:after{
+    transform: scaleX(1);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFBA49;
+    transform-origin: bottom right;
+    transform-origin: bottom left; 
+    content: '';
+}
+article.about h2{
+    font-size: 50px;
+}
+article.about p.kata{
+    width: 600px;
+    font-size: 20px;
+    padding: 20px 0;
+
+}
+article.about p.lanjut{
+    line-height: 0;
+    margin: auto 0;
+    width: fit-content;
+    margin-top: 5px;
+}
+article.about{
+    width: fit-content;
+    padding-left: 20px;
+    font-size: 16px;
+    color: gray;
+    height: fit-content;
+    margin: 0;
+}
+li a {
+    display: inline-block;
+    position: relative;
+}
+header li a:after {
+    content: '';
+    position: absolute; 
+    width: 100%; 
+    transform: scaleX(0); 
+    height: 1px; 
+    bottom: 0; 
+    left: 0; 
+    background-color: #FFBA49;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+li a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left; 
 }
 
-header span{
-    padding:10px;
-    height: 40px;
-    line-height: 40px;
+header li a:hover{
+    color: #FFBA49
+}
+
+header span a{
+    float: right;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    margin-top: 25px;
+}
+header span a img{
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    display: inline;
 }
 
 
@@ -116,11 +226,15 @@ main section.search input{
     width: 85%;
 }
 main section.search span a{
+    margin-top: 0;
     float: right;
-    padding: 10px 40px;
+    padding: 10px 35px;
     background-color: #FFBA49;
     border-radius: 5px;
     color: white;
+    border: 1px solid transparent;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3 ease-in-out;
 }
 main section.search span a:hover{
     background-color: white;
@@ -128,18 +242,16 @@ main section.search span a:hover{
     color: #FFBA49;
 }
 
-main section.kategori{
-    overflow: auto;
-    position: -webkit-sticky;
-    position: sticky;
-    height: 100vh;
-    min-height: 200px;
-    top: 10px;
-}
 main p.judul{
-    padding-left: 20px;
     font-weight: bold;
+    color: #535353;
+    font-size: 22px;
+    margin-left: 20px;
+    text-shadow: 2px 2px white;
 }
+
+
+
 table{
     margin-bottom: 50px;
 }
@@ -177,6 +289,11 @@ main td a{
 main table.hes tr td a{
     font-size: 12px;
     padding: 0;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+main table.hes tr td a:hover{
+    color: #FFBA49;
 }
 
 main td img{
@@ -196,6 +313,8 @@ main section{
 main section.kategori{
     width: 300px;
 }
+
+
 
 
 main section.inti{
@@ -398,17 +517,332 @@ table.jenis td a{
     color: #535353;
     border-radius: 2px;
 }
+.bawah ul{
+    width: 100%;
+    margin-left: 590px;
+    display: inline-block;
+}
+.bawah ul li a{
+    color: #535353;
+    padding: 10px;
+    margin: 10px;
+}
+.bawah ul li a.utama{
+    color: #FFBA49;
+}
+.bawah ul li a:hover{
+    color: #FFBA49;
+}
 
 
 
 
 
 
+/*RESPONSIF*/
+@media (max-width: 1024px)
+{
+    body{
+        width: 1024px;
+        align-items: center;
+    }
+    .header{
+        width: 95% !important;
+        margin: 0 auto;
+        font-size: 14px;
+    }
+    header li a{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    header span img{
+        width: 45px !important;
+        height: 45px !important;
+        margin: 0;
+        padding: 0;
+    }
+
+    main{
+        width: 900px;
+    }
+    main .judul{
+        font-size: 22px !important;
+        margin-left: 15px;
+    }
+    .search input{
+        width: 80% !important;
+    }
+    main .kategori{
+        margin-left: 25px;
+    }
+    main td a{
+        width: 95px;
+    }
+    main td{
+        width: 80px;
+    }
+
+
+    main section.inti{
+        width: 550px !important;
+        margin-right: 0;
+        padding-right: 0;
+    }
+    main section.inti .Besar img{
+        width: 510px;
+        height: 250px;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    main section.inti .Besar{
+        width: 510px;
+        height: 300px;
+    }
+    main section.inti .Besar p{
+        margin: 0;
+        padding: 0;
+    }
+    main section.inti .Besar p a{
+       font-size: 18px;
+       width: 500px;
+       margin-top: 0px !important;
+    }
+    main section.inti img{
+        width: 200px;
+        height: 150px;
+    }
+    section.inti article{
+        width: 500px;
+        height: 150px;
+    }
+    section.inti article p a{
+        font-size: 16px;
+        width: 280px;
+        margin: 0;
+        padding: 0;
+    }
+    section.inti article p{
+        font-size: 10px;
+        width: 270px;
+        margin: 10px;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+    p.tanggal{
+        width: fit-content !important;
+    }
+    .bawah ul{
+        margin-left: 420px;
+    }
+}
 
 
 
 
+@media (max-width: 860px)
+{
+    body{
+        width: 860px;
+        align-items: center;
+    }
+    .header{
+        width: 95% !important;
+        margin: 0 auto;
+        font-size: 14px;
+    }
+    span.open{
+        display: block !important;
+        float: left;
+        margin-top: 25px;
+    }
+    h1{
+        float: none;
+    }
+    .header ul{
+        display: none;
+    }
+    .header span{
+        display: none;
+    }
+    header li a{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    header span img{
+        width: 45px !important;
+        height: 45px !important;
+        margin: 0;
+        padding: 0;
+    }
 
-header li a:hover{
-    color: rgb(255, 184, 53);
+
+    main{
+        width: 95%;
+    }
+    main .judul{
+        font-size: 18px !important;
+        margin-left: 15px;
+    }
+    .search input{
+        width: 80% !important;
+    }
+    main .kategori{
+        margin: 0;
+        width: 100% !important;
+    }
+    main td a{
+        width: 95px;
+    }
+    main td a p{
+        margin-top: 0;
+    }
+    main td{
+        width: 70px;
+        margin: 0 auto;
+        height: fit-content;
+        width: 1000px;
+    }
+
+    
+    main section.inti{
+        width: 100% !important;
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+    main section.inti .Besar img{
+        width: 500px;
+        height: 150px;
+    }
+    main section.inti img{
+        width: 200px;
+        height: 150px;
+    }
+    section.inti article{
+        width: 780px;
+        height: 150px;
+    }
+    section.inti article h4 a{
+        margin: 15px !important;
+        padding: 0 !important;
+    }
+    section.inti article p{
+        font-size: 12px;
+        width: 550px;
+        margin: 10px;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+    .jenis td a{
+        margin-top: 0 !important;
+    }
+    .bawah ul{
+        margin-left: 250px;
+    }
+}
+
+
+@media (max-width: 479px)
+{
+    body{
+        width: 479px;
+        align-items: center;
+    }
+    .header{
+        width: 95% !important;
+        margin: 0 auto;
+        font-size: 14px;
+    }
+    span.open{
+        display: block !important;
+        float: left;
+        margin-top: 25px;
+    }
+    h1{
+        float: none;
+    }
+    .header ul{
+        display: none;
+    }
+    .header span{
+        display: none;
+    }
+    header li a{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    header span img{
+        width: 45px !important;
+        height: 45px !important;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    main{
+        width: 95%;
+    }
+    main .judul{
+        font-size: 16px !important;
+        margin-left: 15px;
+    }
+    section.search{
+        margin: 0 !important;
+    }
+    .search input{
+        width: 70% !important;
+        margin: 0 !important;
+    }
+    main .kategori{
+        margin: 0;
+        width: 100% !important;
+    }
+    main td a{
+        width: 95px;
+    }
+    main td a p{
+        margin-top: 0;
+    }
+    main td{
+        width: 70px;
+        margin: 0 auto;
+        height: fit-content;
+        width: 1000px;
+    }
+
+
+
+    main section.inti{
+        width: 100% !important;
+        margin-right: 0;
+        padding-right: 0;
+    }
+    main section.inti img{
+        width: 160px;
+        height: 120px;
+    }
+    section.inti article{
+        width: 420px;
+        height: 120px;
+    }
+    section.inti article h4 a{
+        font-size: 12px;
+        margin: 8px !important;
+        padding: 0 !important;
+    }
+    section.inti article p{
+        font-size: 10px;
+        width: 240px;
+        padding: 0 10px;
+        margin: 0;
+        margin-top: 0;
+        margin-bottom: 1px;
+    }
+    .jenis td a{
+        font-size: 10;
+        margin-top: 0 !important;
+    }
+    .bawah ul{
+        margin-left: 50px;
+    }
 }

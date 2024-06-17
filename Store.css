@@ -3,28 +3,80 @@ body{
     align-items: center;
     min-height: 100vh;
     background-color: white;
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Varela Round';
     margin: 0;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  header span.open{
+    display: none;
+    color: #818181;
+    width: fit-content;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #FFBA49;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+
+
 header{
-    line-height: 80px;
-    width: 100%;
-    height: 100px;
     padding: 0px;
     float: none;
-    background-repeat: no-repeat;
-    background-color: white;
-    background-size: 100%;
-    border-bottom: 2px solid gray;
-
     display: flex;
     flex-direction: column;
-
+    margin: 0 auto;
+    width: 100%;
+    height: 100px;
+    float: none;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+}
+header section article.header{
+    width: 100%;
+    height: 100px;
 }
 main{
     margin: 0 auto;
@@ -33,12 +85,11 @@ main{
     background-color: white;
     height: 1300px;
     flex: 1;
-    box-shadow: 1px 2px 10px lightgray;
 }
 footer{
     margin: 0 auto;
     width: 100%;
-    background-color: #FFBA49;
+    background-color: rgb(255, 184, 53);
     height: 50pt;
     line-height: 50px;
     color: white;
@@ -47,9 +98,104 @@ footer{
 footer p{
     margin: 10px 20px;
 }
-
 ul{
     list-style-type: none;
+}
+header h1{
+    float: left;
+    width: 160px;
+    color: #FFBA49;
+    padding-left: 15px;
+    font-size: 28px;
+    margin: 30px 0;
+}
+header li{
+    float: left;
+    text-align: center;
+}
+header li a{
+    display: block;
+    padding: 0;
+    width: fit-content;
+    text-decoration: none;
+    color: gray;
+    margin: 40px 30px;
+
+}
+header li a.utama{
+    color: #FFBA49;
+}
+header li a.utama:after{
+    transform: scaleX(1);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFBA49;
+    transform-origin: bottom right;
+    transform-origin: bottom left; 
+    content: '';
+}
+article.about h2{
+    font-size: 50px;
+}
+article.about p.kata{
+    width: 600px;
+    font-size: 20px;
+    padding: 20px 0;
+
+}
+article.about p.lanjut{
+    line-height: 0;
+    margin: auto 0;
+    width: fit-content;
+    margin-top: 5px;
+}
+article.about{
+    width: fit-content;
+    padding-left: 20px;
+    font-size: 16px;
+    color: gray;
+    height: fit-content;
+    margin: 0;
+}
+li a {
+    display: inline-block;
+    position: relative;
+}
+header li a:after {
+    content: '';
+    position: absolute; 
+    width: 100%; 
+    transform: scaleX(0); 
+    height: 1px; 
+    bottom: 0; 
+    left: 0; 
+    background-color: #FFBA49;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+li a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left; 
+}
+
+header li a:hover{
+    color: #FFBA49
+}
+
+header span a{
+    float: right;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    margin-top: 25px;
+}
+header span a img{
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
 }
 a{
     text-decoration: none;
@@ -58,42 +204,7 @@ li{
     display: inline;
 }
 
-header h1{
-    float: left;
-    width: 160px;
-    color: #FFBA49;
-    padding-left: 15px;
-    font-size: 28px;
-}
-header li{
-    float: left;
-}
-header li a{
-    display: block;
-    padding: 8px;
-    width: 80px;
-    text-decoration: none;
-    color: gray;
-}
-header span a{
-    display: block;
-    float: right;
-    padding: 1px;
-    margin-top: 15px;
-    padding-right: 8px;
-    line-height: 40px;
-}
-header span a img{
-    width: 65px;
-    height: 55px;
-    padding-right: 10px;
-}
 
-header span{
-    padding:10px;
-    height: 40px;
-    line-height: 40px;
-}
 
 
 
@@ -117,11 +228,15 @@ main section.search input{
     width: 85%;
 }
 main section.search span a{
+    margin-top: 0;
     float: right;
-    padding: 10px 40px;
+    padding: 10px 35px;
     background-color: #FFBA49;
     border-radius: 5px;
     color: white;
+    border: 1px solid transparent;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3 ease-in-out;
 }
 main section.search span a:hover{
     background-color: white;
@@ -130,8 +245,15 @@ main section.search span a:hover{
 }
 
 main p.judul{
-    padding-left: 25px;
+    font-weight: bold;
+    color: #535353;
+    font-size: 22px;
+    margin-left: 20px;
+    text-shadow: 2px 2px white;
 }
+
+
+
 main td{
     width: 100px;
     margin-bottom: 100px;
@@ -140,15 +262,30 @@ main td{
 }
 main td a{
     color: #535353;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
+main td a:hover{
+    color: #FFBA49
+}
+
+
+
 main td img{
     width: 50px;
     height: 50px;
     margin-bottom: 10px;
     border-radius: 5px;
     border: 2px solid black;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    -webkit-transform: scale(1);
+    transform: scale(1);
 }
-
+main td img:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
 
 main section{
     float: left;
@@ -157,14 +294,13 @@ main section{
 main section.kategori{
     width: 300px;
 }
-main section.kategori ul{
-    padding-left: 0;
-    margin-left: 0;
-}
-main section.kategori li a{
-    color: #535353;
-    padding-right: 40px;
-}
+
+
+
+
+
+
+
 
 
 main section.inti{
@@ -187,16 +323,20 @@ section.inti ul li a{
 section.inti ul li a:hover{
     color: #FFBA49;
 }
-
-
 section.inti img{
     width: 250px;
-    height: 200px;
+    height: 140px;
+    size: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     
-    
 }
+
+
+
+
+
+
 section.inti article{
     margin-top: 10px;
     background-color: white;
@@ -206,36 +346,44 @@ section.inti article{
     float: left;
     margin: 0 20px;
     margin-bottom: 40px;
-    box-shadow: 1px 2px 10px lightgray;
+    box-shadow: 1px 2px lightgray;
 }
 section.inti article h4 a{
     color: #FFBA49;
     width: fit-content;
-    margin: 10px 15px;
-    float: left;
+    margin: 15px 15px;
 }
 section.inti article p{
-    font-size: 16px;
+    font-size: 12px;
     color: #FFBA49;
     width: fit-content;
     padding: 3px;
+    font-size: 16px;
     border-radius: 2px;
-    margin: 5px 12px;
+    margin: 10px 15px;
 }
 section.inti article b a{
     color: white;
     background-color: #FFBA49;
-    padding: 10px 50px;
+    padding: 10px 30px;
     border-radius: 5px;
-    margin: 15px 50px;
-    margin-top: 20px;
+    margin: 15px;
+    margin-top: 40px;
     float: left;
+    border: 1px solid transparent;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3 ease-in-out;
 }
 section.inti article b a:hover{
+    color: #FFBA49;
     background-color: white;
     border: 1px solid #FFBA49;
-    color: #FFBA49;
 }
+
+
+
+
+
 
 
 table.jenis {
@@ -255,12 +403,22 @@ table.jenis td a{
     color: #535353;
     border-radius: 2px;
 }
-
-
-
-
-
-
+.bawah ul{
+    width: 100%;
+    margin-left: 590px;
+    display: inline-block;
+}
+.bawah ul li a{
+    color: #535353;
+    padding: 10px;
+    margin: 10px;
+}
+.bawah ul li a.utama{
+    color: #FFBA49;
+}
+.bawah ul li a:hover{
+    color: #FFBA49;
+}
 
 
 
@@ -268,4 +426,256 @@ table.jenis td a{
 
 header li a:hover{
     color: rgb(255, 184, 53);
+}
+
+
+
+/*RESPONSIF*/
+@media (max-width: 1024px)
+{
+    body{
+        width: 1024px;
+        align-items: center;
+    }
+    .header{
+        width: 95% !important;
+        margin: 0 auto;
+        font-size: 14px;
+    }
+    header li a{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    header span img{
+        width: 45px !important;
+        height: 45px !important;
+        margin: 0;
+        padding: 0;
+    }
+
+    main{
+        width: 900px;
+    }
+    main .judul{
+        font-size: 22px !important;
+        margin-left: 15px;
+    }
+    .search input{
+        width: 80% !important;
+    }
+    main .kategori{
+        margin-left: 25px;
+    }
+    main td a{
+        width: 95px;
+    }
+    main td{
+        width: 80px;
+    }
+    main section.inti{
+        width: 550px !important;
+        margin-right: 0;
+        padding-right: 0;
+    }
+    main section.inti img{
+        width: 220px !important;
+        height: 140px !important;
+    }
+    section.inti article{
+        width: 220px;
+        height: 350px;
+    }
+    section.inti article b a{
+        color: white;
+        background-color: #FFBA49;
+        padding: 10px 30px;
+        border-radius: 5px;
+        margin: 15px;
+        margin-top: 20px;
+        display: inline-block
+    }
+    .bawah ul{
+        margin-left: 420px;
+    }
+}
+
+
+
+
+@media (max-width: 860px)
+{
+    body{
+        width: 860px;
+        align-items: center;
+    }
+    .header{
+        width: 95% !important;
+        margin: 0 auto;
+        font-size: 14px;
+    }
+    span.open{
+        display: block !important;
+        float: left;
+        margin-top: 25px;
+    }
+    h1{
+        float: none;
+    }
+    .header ul{
+        display: none;
+    }
+    .header span{
+        display: none;
+    }
+    header li a{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    header span img{
+        width: 45px !important;
+        height: 45px !important;
+        margin: 0;
+        padding: 0;
+    }
+
+    main{
+        width: 95%;
+    }
+    main .judul{
+        font-size: 18px !important;
+        margin-left: 15px;
+    }
+    .search input{
+        width: 80% !important;
+    }
+    main .kategori{
+        margin-left: 20px;
+        width: 250px !important;
+    }
+    main td a{
+        width: 95px;
+    }
+    main td{
+        width: 70px;
+    }
+
+    main section.inti{
+        width: 520px !important;
+        margin-right: 0;
+        padding-right: 0;
+    }
+    main section.inti img{
+        width: 220px !important;
+        height: 140px !important;
+    }
+    section.inti article{
+        width: 220px;
+        height: 350px;
+    }
+    section.inti article b a{
+        color: white;
+        margin-top: 20px;
+        display: inline-block
+    }
+    .bawah ul{
+        margin-left: 380px;
+    }
+}
+
+
+@media (max-width: 479px)
+{
+    body{
+        width: 479px;
+        align-items: center;
+    }
+    .header{
+        width: 95% !important;
+        margin: 0 auto;
+        font-size: 14px;
+    }
+    span.open{
+        display: block !important;
+        float: left;
+        margin-top: 25px;
+    }
+    h1{
+        float: none;
+    }
+    .header ul{
+        display: none;
+    }
+    .header span{
+        display: none;
+    }
+    header li a{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    header span img{
+        width: 45px !important;
+        height: 45px !important;
+        margin: 0;
+        padding: 0;
+    }
+
+    main{
+        width: 95%;
+    }
+    main .judul{
+        font-size: 16px !important;
+        margin-left: 15px;
+    }
+    section.search{
+        margin: 0 !important;
+    }
+    .search input{
+        width: 70% !important;
+        margin: 0 !important;
+    }
+    main .kategori{
+        margin: 0;
+        width: 100% !important;
+    }
+    main td a{
+        width: 95px;
+    }
+    main td a p{
+        margin-top: 0;
+    }
+    main td{
+        width: 70px;
+        margin: 0 auto;
+        height: fit-content;
+        width: 1000px;
+        
+    }
+
+    main section.inti{
+        width: 100% !important;
+        margin-right: 0;
+        padding-right: 0;
+        border: none;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    main section.inti img{
+        width: 200px !important;
+        height: 140px !important;
+    }
+    section.inti article{
+        width: 200px;
+        height: 340px;
+        margin: 25px 12px;
+        padding: 0;
+
+    }
+    section.inti article b a{
+        color: white;
+        margin-top: 20px;
+        display: inline-block
+    }
+    .bawah ul{
+        margin-left: 50px;
+    }
 }
