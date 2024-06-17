@@ -5,12 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Home.css">
     <link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'>
+    <link rel="stylesheet" href="nav.js">
     <title>Anicare</title>
 </head>
 <body>
     <header>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="Home.html" class="utama">Home</a>
+            <a href="Berita.html">Berita</a>
+            <a href="Artikel.html">Artikel</a>
+            <a href="Store.html">Store</a>
+            <a href="About Us.html">About Us</a>
+        </div>
+          
+          <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+          }
+          
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+          }
+          </script>
         <section>
             <article class="header">
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="open">&#9776;</span>
                 <H1>
                     Anicare
                 </H1>
@@ -60,7 +80,7 @@
             </article>
         </section>
         <section class="produk">
-            <p class="judul">Penawaran Menarik untuk-mu <span><a href="Store.html">Lihat semua</a></span></p>
+            <p class="judul">Penawaran menarik dari kami untuk-mu <span><a href="Store.html">Lihat semua</a></span></p>
             <a href="#">
             <article class="produk">
                 <a href="#"><img src="Assets/produk home.png" alt="produk" class="utama"></a>
@@ -89,7 +109,7 @@
             </a>
         </section>
         <section class="artikel">
-            <p class="judul">Baca juga Artikel menarik dari kami <span><a href="Artikel.html">Lihat semua</a></span></p>
+            <p class="judul">Baca juga Artikel hewan menarik dari kami <span><a href="Artikel.html">Lihat semua</a></span></p>
             <a href="#">
             <article class="artikel">
                 <img src="Assets/Artikel.png" alt="artikel">

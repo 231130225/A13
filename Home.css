@@ -13,6 +13,55 @@ body{
     flex-direction: column;
     min-height: 100vh;
 }
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  header span.open{
+    display: none;
+    color: #818181;
+    width: fit-content;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #FFBA49;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+
+
 header{
     padding: 0px;
     float: none;
@@ -28,6 +77,8 @@ header{
     background-image: url(Assets/background.png);
     background-size: cover;
 }
+
+
 header section{
     width: 1048px;
     margin: 0 auto;
@@ -177,9 +228,6 @@ header p.lanjut a:hover{
     border: 1px solid#FFBA49;
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
-}
-span{
-    float: right;
 }
 
 
@@ -566,6 +614,7 @@ main p.judul span{
     height: 45px;
     margin: 0 20px;
     width: fit-content;
+    float: right;
 }
 
 /*Responsif Dokter*/
@@ -706,6 +755,300 @@ main p.judul span:hover{
     }
     main section.artikel article{
         width: 750px;
+    }
+    section.artikel article h4:hover{
+        font-size: 17px;
+    }
+    section.artikel article img:hover{
+        -webkit-transform: scale(1.08);
+        transform: scale(1.08);
+    }
+}
+
+
+
+@media (max-width: 860px)
+{
+   
+    header span a{
+        display: none;
+    }
+    header span.open{
+        display: block;
+    }
+
+    body{
+        width: 860px ;
+        align-items: center;
+    }
+    header{
+        width: 100%;
+        height: 350px;
+    }
+    header span{
+        float: left;
+        margin-top: 25px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .header{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .header ul li{
+       display: none;
+    }
+    .header h4{
+        float: none !important;
+    }
+    header span img{
+        width: 45px !important;
+        height: 45px !important;
+        margin: 0;
+        padding: 0;
+    }
+    .about{
+        width: 90% !important;
+        margin: 0 auto !important;
+    }
+    .about h2 {
+        font-size: 24px !important;
+    }
+    .about p {
+        font-size: 16px !important;
+    }
+    .lanjut a{
+        font-size: 14px;
+        width: 150px !important;
+    }
+
+    main{
+        width: 95%;
+    }
+    main .judul{
+        font-size: 20px !important;
+    }
+    main td a{
+        width: 95px;
+    }
+    main td p{
+        font-size: 10px;
+        margin-top: 15px !important;
+        padding: 0;
+    }
+    main td img{
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        left: 5px;
+    }
+    main section.dokter{
+        height: 350px;
+        width: 780px;
+    }
+    main section.dokter article.dokter{
+        width: 250px !important;
+        height: 250px !important;
+    }
+    main section.dokter img{
+        width: 250px !important;
+        height: 250px !important;
+    }
+    main section.dokter h4 a{
+        margin-top: 150px !important;
+    }
+    
+    main section.produk{
+        height: 350px;
+        width: 780px;
+    }
+    main section.produk article.produk{
+        width: 250px !important;
+        height: 250px !important;
+    }
+    main section.produk img{
+        width: 250px !important;
+        height: 250px !important;
+    }
+    main section.produk h4 a{
+        margin-top: 180px !important;
+    }
+    main section.produk p.bintang img{
+        width: 110px !important;
+        height: 20px !important;
+    }
+
+    main section.artikel{
+        width: 780px;
+        height: 600px;
+    }
+    main section.artikel article{
+        width: 750px;
+    }
+    section.artikel article h4:hover{
+        font-size: 17px;
+    }
+    section.artikel article img:hover{
+        -webkit-transform: scale(1.08);
+        transform: scale(1.08);
+    }
+}
+
+
+@media (max-width: 479px)
+{
+    section.fitur tr{
+        overflow: auto;
+    }
+    header span a{
+        display: none;
+    }
+    header span.open{
+        display: block;
+    }
+
+    body{
+        width: 470px ;
+        align-items: center;
+    }
+    header{
+        width: 100%;
+        height: 350px;
+    }
+    header span{
+        float: left;
+        margin-top: 25px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .header{
+        width: 470px;
+        margin: 0;
+        padding: 0;
+    }
+    .header ul li{
+       display: none;
+    }
+    .header h4{
+        float: none !important;
+    }
+    header span img{
+        width: 45px !important;
+        height: 45px !important;
+        margin: 0;
+        padding: 0;
+        display: none !important;
+    }
+    .about{
+        width: 470px !important;
+        margin: 0 !important;
+    }
+    .about h2 {
+        font-size: 24px !important;
+        width: 470px !important;
+    }
+    .about p {
+        font-size: 16px !important;
+        width: 470px !important;
+    }
+    .lanjut a{
+        font-size: 14px;
+        width: 150px !important;
+    }
+
+    main{
+        width: 470px;
+    }
+    main .judul{
+        font-size: 18px !important;
+        width: 380px;
+        height: 100px;
+    }
+    main .judul span{
+        float: none !important;
+        margin: 0 !important;
+        padding: 0;
+        margin-top: 20px !important;
+    }
+    main td a{
+        width: 95px;
+    }
+    main td p{
+        font-size: 10px;
+        margin-top: 15px !important;
+        padding: 0;
+    }
+    main td img{
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        left: 5px;
+    }
+    main section.dokter{
+        height: 1100px;
+        width: 450px;
+        align-items: center;
+        
+    }
+    main section.dokter article.dokter{
+        width: 300px !important;
+        height: 300px !important;    
+        margin-left: 60px !important;
+    }
+    main section.dokter img{
+        width: 300px !important;
+        height: 300px !important;
+    }
+    main section.dokter h4 a{
+        margin-top: 200px !important;
+    }
+    
+
+    main section.produk{
+        height: 1150px;
+        width: 450px;
+        align-items: center;
+    }
+    main section.produk article.produk{
+        width: 300px !important;
+        height: 300px !important;    
+        margin-left: 60px !important;
+    }
+    main section.produk img{
+        width: 300px !important;
+        height: 300px !important;
+    }
+    main section.produk h4 a{
+        margin-top: 180px !important;
+    }
+    main section.produk p.bintang img{
+        width: 110px !important;
+        height: 20px !important;
+    }
+
+
+    main section.artikel{
+        height: 1100px;
+        width: 450px;
+        align-items: center;
+    }
+    section.artikel img{
+        float: none;
+    }
+    section.artikel h4{
+        float: none !important;
+        padding: 0 !important;
+        text-align: justify;
+    }
+    section.artikel p{
+        float: none !important;
+        padding: 0 !important;
+    }
+    main section.artikel article{
+        width: 250px;
+        height: 300px;
+        margin-left: 80px;
     }
     section.artikel article h4:hover{
         font-size: 17px;
