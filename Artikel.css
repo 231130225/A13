@@ -699,6 +699,7 @@ table.jenis td a{
     main td{
         width: 70px;
         margin: 0 auto;
+        padding: 0;
         height: fit-content;
         width: 1000px;
     }
@@ -711,8 +712,23 @@ table.jenis td a{
         border: none;
     }
     main section.inti .Besar img{
-        width: 500px;
-        height: 150px;
+        width: 770px;
+        height: 350px;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    main section.inti .Besar{
+        width: 510px;
+        height: 400px;
+    }
+    main section.inti .Besar p{
+        margin: 0;
+        padding: 0;
+    }
+    main section.inti .Besar p a{
+       font-size: 18px;
+       width: 760px;
+       margin-top: 0px !important;
     }
     main section.inti img{
         width: 200px;
@@ -722,19 +738,21 @@ table.jenis td a{
         width: 780px;
         height: 150px;
     }
-    section.inti article h4 a{
-        margin: 15px !important;
-        padding: 0 !important;
+    section.inti article p a{
+        font-size: 16px;
+        width: 540px;
+        margin: 0;
+        padding: 0;
     }
     section.inti article p{
-        font-size: 12px;
-        width: 550px;
+        font-size: 10px;
+        width: 540px;
         margin: 10px;
         padding: 5px;
         margin-bottom: 5px;
     }
-    .jenis td a{
-        margin-top: 0 !important;
+    p.tanggal{
+        width: fit-content !important;
     }
     .bawah ul{
         margin-left: 250px;
@@ -817,30 +835,48 @@ table.jenis td a{
         margin-right: 0;
         padding-right: 0;
     }
+    main section.inti .Besar img{
+        width: 420px;
+        height: 300px;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    main section.inti .Besar{
+        width: 420px;
+        height: 400px;
+    }
+    main section.inti .Besar p{
+        margin: 0;
+        padding: 0;
+    }
+    main section.inti .Besar p a{
+       font-size: 16px;
+       width: 400px;
+       margin-top: 0px !important;
+    }
     main section.inti img{
         width: 160px;
-        height: 120px;
+        height: 140px;
     }
     section.inti article{
         width: 420px;
-        height: 120px;
+        height: 140px;
     }
-    section.inti article h4 a{
+    section.inti article p a{
         font-size: 12px;
-        margin: 8px !important;
-        padding: 0 !important;
+        width: 240px;
+        margin: 0;
+        padding: 0;
     }
     section.inti article p{
         font-size: 10px;
-        width: 240px;
-        padding: 0 10px;
-        margin: 0;
-        margin-top: 0;
-        margin-bottom: 1px;
+        width: 200px;
+        margin: 10px;
+        padding: 5px;
+        margin-bottom: 5px;
     }
-    .jenis td a{
-        font-size: 10;
-        margin-top: 0 !important;
+    p.tanggal{
+        width: fit-content !important;
     }
     .bawah ul{
         margin-left: 50px;

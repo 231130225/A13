@@ -4,23 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Berita.css">
+    <link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'>
     <title>Berita</title>
 </head>
 <body>
     <header>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="Home.html">Home</a>
+            <a href="Berita.html">Berita</a>
+            <a href="Artikel.html">Artikel</a>
+            <a href="Store.html">Store</a>
+            <a href="About Us.html">About Us</a>
+        </div>
+          
+          <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+          }
+          
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+          }
+          </script>
         <section>
-            <H1>
-                Anicare
-            </H1>
-            <ul>
-                <li><a href="Home.html" class="utama">Home</a></li>
-                <li><a href="Berita.html">Berita</a></li>
-                <li><a href="Artikel.html">Artikel</a></li>
-                <li><a href="Store.html">Store</a></li>
-                <li><a href="About Us.html">About Us</a></li>
-            </ul>
-            <span><a href="#"><img src="Assets/profil.png" alt="Profil"></a></span>
-        </section>
+            <article class="header">
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="open">&#9776;</span>
+                <H1>
+                    Anicare
+                </H1>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Berita.html">Berita</a></li>
+                    <li><a href="Artikel.html">Artikel</a></li>
+                    <li><a href="Store.html">Store</a></li>
+                    <li><a href="About Us.html">About Us</a></li>
+                </ul>
+                <span><a href="#"><img src="Assets/profil.png" alt="Profil"></a></span>
+            </article>
     </header>
     <main>
         <section class="search">
@@ -74,17 +95,17 @@
             <section class="Terbaru">
                 <p class="judul">Berita Terbaru</p>
                 <article class="Berita">
-                    <a href="#"><img src="Assets/dokter.png" alt="berita"></a>
+                    <a href="#"><img src="Assets/Artikel.png" alt="berita"></a>
                     <p><a href="#">Judul Lorem ipsum, dolor sit amet cot. Sad magn amet cot. Sad magnam voam voluptatibus eligendi.</a></p>
                     <p class="tanggal">1 Jam lalu</p>
                 </article>
                 <article class="Berita">
-                    <a href="#"><img src="Assets/dokter.png" alt="berita"></a>
+                    <a href="#"><img src="Assets/Artikel.png" alt="berita"></a>
                     <p><a href="#">Judul Lorem ipsum, dolor sit amet cot. Sad magnam voluptatibus eligendi.</a></p>
                     <p class="tanggal">5 Jam lalu</p>
                 </article>
                 <article class="Berita">
-                    <a href="#"><img src="Assets/dokter.png" alt="berita"></a>
+                    <a href="#"><img src="Assets/Artikel.png" alt="berita"></a>
                     <p><a href="#">Judul Lorem ipsum, dolor sit amet cot. Sad magnam voluptatibus eligendi.</a></p>
                     <p class="tanggal">8 Jam lalu</p>
                 </article>
@@ -92,32 +113,32 @@
             <section class="Rekomendasi">
                 <p class="judul">Rekomendasi Berita</p>
                 <article class="Berita">
-                    <a href="#"><img src="Assets/dokter.png" alt="berita"></a>
+                    <a href="#"><img src="Assets/Artikel.png" alt="berita"></a>
                     <p><a href="#">Judul Lorem ipsum, dolor sit amet cot. Sad magnam voluptatibus eligendi.</a></p>
                     <p class="tanggal">14 juni 2024</p>
                 </article>
                 <article class="Berita">
-                    <a href="#"><img src="Assets/dokter.png" alt="berita"></a>
+                    <a href="#"><img src="Assets/Artikel.png" alt="berita"></a>
                     <p><a href="#">Judul Lorem ipsum, dolor sit amet cot. Sad magnam voluptatibus eligendi.</a></p>
                     <p class="tanggal">14 juni 2024</p>
                 </article>
                 <article class="Berita">
-                    <a href="#"><img src="Assets/dokter.png" alt="berita"></a>
+                    <a href="#"><img src="Assets/Artikel.png" alt="berita"></a>
                     <p><a href="#">Judul Lorem ipsum, dolor sit amet cot. Sad magnam voluptatibus eligendi.</a></p>
                     <p class="tanggal">14 juni 2024</p>
                 </article>
                 <article class="Berita">
-                    <a href="#"><img src="Assets/dokter.png" alt="berita"></a>
+                    <a href="#"><img src="Assets/Artikel.png" alt="berita"></a>
                     <p><a href="#">Judul Lorem ipsum, dolor sit amet cot. Sad magnam voluptatibus eligendi.</a></p>
                     <p class="tanggal">14 juni 2024</p>
                 </article>
                 <article class="Berita">
-                    <a href="#"><img src="Assets/dokter.png" alt="berita"></a>
+                    <a href="#"><img src="Assets/Artikel.png" alt="berita"></a>
                     <p><a href="#">Judul Lorem ipsum, dolor sit amet cot. Sad magnam voluptatibus eligendi.</a></p>
                     <p class="tanggal">14 juni 2024</p>
                 </article>
                 <article class="Berita">
-                    <a href="#"><img src="Assets/dokter.png" alt="berita"></a>
+                    <a href="#"><img src="Assets/Artikel.png" alt="berita"></a>
                     <p><a href="#">Judul Lorem ipsum, dolor sit amet cot. Sad magnam voluptatibus eligendi.</a></p>
                     <p class="tanggal">14 juni 2024</p>
                 </article>
@@ -125,22 +146,22 @@
             <section class="Terbaru">
                 <p class="judul">Berita Terpopuler</p>
                 <article class="Berita">
-                    <a href="#"><img src="Assets/dokter.png" alt="berita"></a>
+                    <a href="#"><img src="Assets/Artikel.png" alt="berita"></a>
                     <p><a href="#">Judul Lorem ipsum, dolor sit amet cot. Sad magn amet cot. Sad magnam voam voluptatibus eligendi.</a></p>
                     <p class="tanggal">14 juni 2024</p>
                 </article>
                 <article class="Berita">
-                    <a href="#"><img src="Assets/dokter.png" alt="berita"></a>
+                    <a href="#"><img src="Assets/Artikel.png" alt="berita"></a>
                     <p><a href="#">Judul Lorem ipsum, dolor sit amet cot. Sad magnam voluptatibus eligendi.</a></p>
                     <p class="tanggal">14 juni 2024</p>
                 </article>
                 <article class="Berita">
-                    <a href="#"><img src="Assets/dokter.png" alt="berita"></a>
+                    <a href="#"><img src="Assets/Artikel.png" alt="berita"></a>
                     <p><a href="#">Judul Lorem ipsum, dolor sit amet cot. Sad magnam voluptatibus eligendi.</a></p>
                     <p class="tanggal">14 juni 2024</p>
                 </article>
                 <article class="Berita">
-                    <a href="#"><img src="Assets/dokter.png" alt="berita"></a>
+                    <a href="#"><img src="Assets/Artikel.png" alt="berita"></a>
                     <p><a href="#">Judul Lorem ipsum, dolor sit amet cot. Sad magnam voluptatibus eligendi.</a></p>
                     <p class="tanggal">14 juni 2024</p>
                 </article>
@@ -148,17 +169,17 @@
             <section class="Rekomendasi">
                 <p class="judul">Rekomendasi Berita</p>
                 <article class="Berita">
-                    <a href="#"><img src="Assets/dokter.png" alt="berita"></a>
+                    <a href="#"><img src="Assets/Artikel.png" alt="berita"></a>
                     <p><a href="#">Judul Lorem ipsum, dolor sit amet cot. Sad magnam voluptatibus eligendi.</a></p>
                     <p class="tanggal">14 juni 2024</p>
                 </article>
                 <article class="Berita">
-                    <a href="#"><img src="Assets/dokter.png" alt="berita"></a>
+                    <a href="#"><img src="Assets/Artikel.png" alt="berita"></a>
                     <p><a href="#">Judul Lorem ipsum, dolor sit amet cot. Sad magnam voluptatibus eligendi.</a></p>
                     <p class="tanggal">14 juni 2024</p>
                 </article>
                 <article class="Berita">
-                    <a href="#"><img src="Assets/dokter.png" alt="berita"></a>
+                    <a href="#"><img src="Assets/Artikel.png" alt="berita"></a>
                     <p><a href="#">Judul Lorem ipsum, dolor sit amet cot. Sad magnam voluptatibus eligendi.</a></p>
                     <p class="tanggal">14 juni 2024</p>
                 </article>
@@ -166,28 +187,30 @@
             <section class="Terbaru">
                 <p class="judul">Berita Terpopuler</p>
                 <article class="Berita">
-                    <a href="#"><img src="Assets/dokter.png" alt="berita"></a>
+                    <a href="#"><img src="Assets/Artikel.png" alt="berita"></a>
                     <p><a href="#">Judul Lorem ipsum, dolor sit amet cot. Sad magn amet cot. Sad magnam voam voluptatibus eligendi.</a></p>
                     <p class="tanggal">14 juni 2024</p>
                 </article>
                 <article class="Berita">
-                    <a href="#"><img src="Assets/dokter.png" alt="berita"></a>
+                    <a href="#"><img src="Assets/Artikel.png" alt="berita"></a>
                     <p><a href="#">Judul Lorem ipsum, dolor sit amet cot. Sad magnam voluptatibus eligendi.</a></p>
                     <p class="tanggal">14 juni 2024</p>
                 </article>
                 <article class="Berita">
-                    <a href="#"><img src="Assets/dokter.png" alt="berita"></a>
+                    <a href="#"><img src="Assets/Artikel.png" alt="berita"></a>
                     <p><a href="#">Judul Lorem ipsum, dolor sit amet cot. Sad magnam voluptatibus eligendi.</a></p>
                     <p class="tanggal">14 juni 2024</p>
                 </article>
                 <article class="Berita">
-                    <a href="#"><img src="Assets/dokter.png" alt="berita"></a>
+                    <a href="#"><img src="Assets/Artikel.png" alt="berita"></a>
                     <p><a href="#">Judul Lorem ipsum, dolor sit amet cot. Sad magnam voluptatibus eligendi.</a></p>
                     <p class="tanggal">14 juni 2024</p>
                 </article>
             </section>
+        </section>
+        <section class="bawah">
             <ul>
-                <li><a href="">1</a></li>
+                <li><a href="" class="utama">1</a></li>
                 <li><a href="">2</a></li>
                 <li><a href="">3</a></li>
                 <li><a href="">4</a></li>

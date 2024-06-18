@@ -4,23 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Post.css">
+    <link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'>
     <title>Post</title>
 </head>
 <body>
     <header>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="Home.html">Home</a>
+            <a href="Berita.html">Berita</a>
+            <a href="Artikel.html">Artikel</a>
+            <a href="Store.html">Store</a>
+            <a href="About Us.html">About Us</a>
+        </div>
+          
+          <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+          }
+          
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+          }
+          </script>
         <section>
-            <H1>
-                Anicare
-            </H1>
-            <ul>
-                <li><a href="Home.html" class="utama">Home</a></li>
-                <li><a href="Berita.html">Berita</a></li>
-                <li><a href="Artikel.html">Artikel</a></li>
-                <li><a href="Store.html">Store</a></li>
-                <li><a href="About Us.html">About Us</a></li>
-            </ul>
-            <span><a href="#"><img src="Assets/profil.png" alt="Profil"></a></span>
-        </section>
+            <article class="header">
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="open">&#9776;</span>
+                <H1>
+                    Anicare
+                </H1>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Berita.html">Berita</a></li>
+                    <li><a href="Artikel.html">Artikel</a></li>
+                    <li><a href="Store.html">Store</a></li>
+                    <li><a href="About Us.html">About Us</a></li>
+                </ul>
+                <span><a href="#"><img src="Assets/profil.png" alt="Profil"></a></span>
+            </article>
     </header>
     <main>
         <section class="search">
@@ -28,91 +49,91 @@
             <span><a href="#">Cari</a></span>
         </section>
        <article class="dua">
-        <section>
-            <b>PostCare</b>
-            <p>Learn With The Expert</p>
-            <div class="tiga">
-                Post Something
-            </div>         
-        </section>
+            <section>
+                <b>PostCare</b>
+                <p>Learn With The Expert</p>
+                <div class="tiga">
+                    Post Something
+                </div>         
+            </section>
        </article>
 
        <article class="satu">
-        <section class="satu">
-            <b>Judul Postingan</b>
-            <div class="dua">
-                <p>Gambar postingan</p>
-            </div>
-            <div class="tiga">
-                <img class="satu" src="Assets/save.webp" alt="Save">
-                <img class="dua" src="Assets/suka.jfif" alt="Like">
-                <img class="tiga" src="Assets/komen.jpg" alt="Comment">
-                <img class="empat" src="Assets/share.png" alt="Share"> 
-            </div>
-        </section>
-        <section class="satu">
-            <b>Judul Postingan</b>
-            <div class="dua">
-                <p>Gambar postingan</p>
-            </div>
-            <div class="tiga">
-                <img class="satu" src="Assets/save.webp" alt="Save">
-                <img class="dua" src="Assets/suka.jfif" alt="Like">
-                <img class="tiga" src="Assets/komen.jpg" alt="Comment">
-                <img class="empat" src="Assets/share.png" alt="Share">
-            </div>
-        </section>
-        <section class="satu">
-            <b>Judul Postingan</b>
-            <div class="dua">
-                <p>Gambar postingan</p>
-            </div>
-            <div class="tiga">
-                <img class="satu" src="Assets/save.webp" alt="Save">
-                <img class="dua" src="Assets/suka.jfif" alt="Like">
-                <img class="tiga" src="Assets/komen.jpg" alt="Comment">
-                <img class="empat" src="Assets/share.png" alt="Share">
-            </div>
-        </section>
+            <section class="satu">
+                <b>Judul Postingan</b>
+                <div class="dua">
+                    <p>Gambar postingan</p>
+                </div>
+                <div class="tiga">
+                    <img class="satu" src="Assets/save.webp" alt="Save">
+                    <img class="dua" src="Assets/suka.jfif" alt="Like">
+                    <img class="tiga" src="Assets/komen.jpg" alt="Comment">
+                    <img class="empat" src="Assets/share.png" alt="Share"> 
+                </div>
+            </section>
+            <section class="satu">
+                <b>Judul Postingan</b>
+                <div class="dua">
+                    <p>Gambar postingan</p>
+                </div>
+                <div class="tiga">
+                    <img class="satu" src="Assets/save.webp" alt="Save">
+                    <img class="dua" src="Assets/suka.jfif" alt="Like">
+                    <img class="tiga" src="Assets/komen.jpg" alt="Comment">
+                    <img class="empat" src="Assets/share.png" alt="Share">
+                </div>
+            </section>
+            <section class="satu">
+                <b>Judul Postingan</b>
+                <div class="dua">
+                    <p>Gambar postingan</p>
+                </div>
+                <div class="tiga">
+                    <img class="satu" src="Assets/save.webp" alt="Save">
+                    <img class="dua" src="Assets/suka.jfif" alt="Like">
+                    <img class="tiga" src="Assets/komen.jpg" alt="Comment">
+                    <img class="empat" src="Assets/share.png" alt="Share">
+                </div>
+            </section>
        </article>
        <article class="satu">
-        <section class="satu">
-            <b>Judul Postingan</b>
-            <div class="dua">
-                <p>Gambar postingan</p>
-            </div>
-            <div class="tiga">
-                <img class="satu" src="Assets/save.webp" alt="Save">
-                <img class="dua" src="Assets/suka.jfif" alt="Like">
-                <img class="tiga" src="Assets/komen.jpg" alt="Comment">
-                <img class="empat" src="Assets/share.png" alt="Share">
-            </div>
-        </section>
-        <section class="satu">
-            <b>Judul Postingan</b>
-            <div class="dua">
-                <p>Gambar postingan</p>
-            </div>
-            <div class="tiga">
-                <img class="satu" src="Assets/save.webp" alt="Save">
-                <img class="dua" src="Assets/suka.jfif" alt="Like">
-                <img class="tiga" src="Assets/komen.jpg" alt="Comment">
-                <img class="empat" src="Assets/share.png" alt="Share">
-            </div>
-        </section>
-        <section class="satu">
-            <b>Judul Postingan</b>
-            <div class="dua">
-                <p>Gambar postingan</p>
-            </div>
-            <div class="tiga">
-                <img class="satu" src="Assets/save.webp" alt="Save">
-                <img class="dua" src="Assets/suka.jfif" alt="Like">
-                <img class="tiga" src="Assets/komen.jpg" alt="Comment">
-                <img class="empat" src="Assets/share.png" alt="Share">
-            </div>
-        </section>
-    </article>
+            <section class="satu">
+                <b>Judul Postingan</b>
+                <div class="dua">
+                    <p>Gambar postingan</p>
+                </div>
+                <div class="tiga">
+                    <img class="satu" src="Assets/save.webp" alt="Save">
+                    <img class="dua" src="Assets/suka.jfif" alt="Like">
+                    <img class="tiga" src="Assets/komen.jpg" alt="Comment">
+                    <img class="empat" src="Assets/share.png" alt="Share">
+                </div>
+            </section>
+            <section class="satu">
+                <b>Judul Postingan</b>
+                <div class="dua">
+                    <p>Gambar postingan</p>
+                </div>
+                <div class="tiga">
+                    <img class="satu" src="Assets/save.webp" alt="Save">
+                    <img class="dua" src="Assets/suka.jfif" alt="Like">
+                    <img class="tiga" src="Assets/komen.jpg" alt="Comment">
+                    <img class="empat" src="Assets/share.png" alt="Share">
+                </div>
+            </section>
+            <section class="satu">
+                <b>Judul Postingan</b>
+                <div class="dua">
+                    <p>Gambar postingan</p>
+                </div>
+                <div class="tiga">
+                    <img class="satu" src="Assets/save.webp" alt="Save">
+                    <img class="dua" src="Assets/suka.jfif" alt="Like">
+                    <img class="tiga" src="Assets/komen.jpg" alt="Comment">
+                    <img class="empat" src="Assets/share.png" alt="Share">
+                </div>
+            </section>
+        </article>
     </main>
     <footer>
         <p>COPYRIGHT ©ANICARE 2024.</p>
