@@ -457,7 +457,7 @@ table.jenis td a{
 }
 
 .bawah ul{
-    width: 100%;
+    width: fit-content;
     margin-left: 590px;
     display: inline-block;
 }
