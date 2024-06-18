@@ -340,7 +340,7 @@ section.inti ul li a:hover{
 }
 section.inti img{
     width: 250px;
-    height: 140px;
+    height: 200px;
     size: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -394,7 +394,7 @@ section.inti article b a{
     padding: 10px 30px;
     border-radius: 5px;
     margin: 15px;
-    margin-top: 40px;
+    margin-top: 20px;
     float: left;
     border: 1px solid transparent;
     -webkit-transition: .3s ease-in-out;

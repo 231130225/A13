@@ -340,6 +340,9 @@ main td a:hover{
 /*Produk*/
 
 section.produk{
+    background-image: url(Assets/back.png);
+    background-size: cover;
+    background-position: center;
     background-color: #ffeccd;
     border-top-left-radius: 200px;
     border-bottom-right-radius: 200px;
@@ -468,6 +471,9 @@ section.artikel img{
     
 }
 section.artikel{
+    background-image: url(Assets/back.png);
+    background-size: cover;
+    background-position: center;
     background-color: #ffeccd;
     border-top-left-radius: 100px;
     border-bottom-right-radius: 100px;
@@ -552,6 +558,9 @@ main p.judul span a{
     -webkit-text-stroke: none;
 }
 main section.dokter{
+    background-image: url(Assets/back.png);
+    background-size: cover;
+    background-position: center;
     background-color: #ffeccd;
     border-top-left-radius: 200px;
     border-bottom-right-radius: 200px;
