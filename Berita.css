@@ -356,6 +356,24 @@ section.inti img{
     height: 150px;
     border-radius: 5px;
     margin: 0;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+section.inti img:hover{
+-webkit-transform: scale(1.05);
+transform: scale(1.05);
+}
+
+section.inti P a{
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+section.inti article p a:hover{
+    font-size: medium;
+    color: #FFBA49;
 }
 section.inti article{
     margin-top: 10px;
@@ -706,6 +724,9 @@ table.jenis td a{
     }
     .bawah ul{
         margin-left: 250px;
+    }
+    section.inti article p a:hover{
+        font-size: small;
     }
 }
 
