@@ -340,6 +340,9 @@ main td a:hover{
 /*Produk*/
 
 section.produk{
+    background-image: url(Assets/back.png);
+    background-size: cover;
+    background-position: center;
     background-color: #ffeccd;
     border-top-left-radius: 200px;
     border-bottom-right-radius: 200px;
@@ -468,6 +471,9 @@ section.artikel img{
     
 }
 section.artikel{
+    background-image: url(Assets/back.png);
+    background-size: cover;
+    background-position: center;
     background-color: #ffeccd;
     border-top-left-radius: 100px;
     border-bottom-right-radius: 100px;
@@ -552,6 +558,9 @@ main p.judul span a{
     -webkit-text-stroke: none;
 }
 main section.dokter{
+    background-image: url(Assets/back.png);
+    background-size: cover;
+    background-position: center;
     background-color: #ffeccd;
     border-top-left-radius: 200px;
     border-bottom-right-radius: 200px;
@@ -662,11 +671,12 @@ main p.judul span:hover{
     header{
         width: 100%;
         height: 400px;
+
     }
     .header{
         width: 800px !important;
         margin: 0 auto;
-        font-size: 14px;
+        font-size: 14px;;
     }
     header li a{
         margin-left: 10px;
@@ -808,6 +818,9 @@ main p.judul span:hover{
         margin: 0;
         padding: 0;
     }
+    section{
+        width: fit-content !important;
+    }
     .about{
         width: 90% !important;
         margin: 0 auto !important;
@@ -897,10 +910,7 @@ main p.judul span:hover{
 
 
 @media (max-width: 479px)
-{
-    section {
-        max-width: 479px!important;
-    }
+{   
     main section.fitur{
         margin-top: 50px;
     }
@@ -951,7 +961,7 @@ main p.judul span:hover{
         align-items: center;
     }
     header{
-        width: 100%;
+        width: 100% !important;
         height: 350px;
     }
     header span{
@@ -961,7 +971,7 @@ main p.judul span:hover{
         margin-left: 10px;
     }
     .header{
-        width: 470px;
+        width: 100% !important;
         margin: 0;
         padding: 0;
     }
@@ -978,25 +988,42 @@ main p.judul span:hover{
         padding: 0;
         display: none !important;
     }
-    .about{
+    section{
         width: 470px !important;
-        margin: 0 !important;
+    }
+    section.fitur{
+        width: 450px !important;
+    }
+    section.dokter{
+        margin-left: 10px;
+    }
+    section.produk{
+        margin-left: 10px;
+    }
+    section.artikel{
+        margin-left: 10px;
+    }
+    .about{
+        width: fit-content !important;
     }
     .about h2 {
         font-size: 24px !important;
-        width: 470px !important;
+        width: fit-content !important;
     }
     .about p {
         font-size: 16px !important;
-        width: 470px !important;
+        width: fit-content !important;
     }
     .lanjut a{
         font-size: 14px;
         width: 150px !important;
+        padding: 20px !important;
     }
 
     main{
-        width: 100%;
+        width: 470px !important;
+        padding: 0;
+        margin: 0;
     }
     main .judul{
         font-size: 18px !important;
@@ -1005,7 +1032,7 @@ main p.judul span:hover{
     }
     main .judul span{
         float: none !important;
-        margin: 0 !important;
+        margin: 10px 0 !important;
         padding: 0;
         margin-top: 20px !important;
     }
@@ -1025,7 +1052,7 @@ main p.judul span:hover{
     }
     main section.dokter{
         height: 1100px;
-        width: 450px;
+        width: 430px !important;
         align-items: center;
         
     }
@@ -1045,7 +1072,7 @@ main p.judul span:hover{
 
     main section.produk{
         height: 1150px;
-        width: 450px;
+        width: 430px !important;
         align-items: center;
     }
     main section.produk article.produk{
@@ -1068,7 +1095,7 @@ main p.judul span:hover{
 
     main section.artikel{
         height: 1150px;
-        width: 450px;
+        width: 430px !important;
         align-items: center;
     }
     section.artikel img{

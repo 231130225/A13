@@ -329,7 +329,15 @@ section.inti img{
     size: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+section.inti img:hover{
+-webkit-transform: scale(1.05);
+transform: scale(1.05);
 }
 
 
@@ -352,6 +360,11 @@ section.inti article h4 a{
     color: #FFBA49;
     width: fit-content;
     margin: 15px 15px;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+section.inti article h4 a:hover{
+    font-size: large;
 }
 section.inti article p{
     font-size: 12px;
@@ -404,7 +417,7 @@ table.jenis td a{
     border-radius: 2px;
 }
 .bawah ul{
-    width: 100%;
+    width: fit-content;
     margin-left: 590px;
     display: inline-block;
 }

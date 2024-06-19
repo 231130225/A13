@@ -330,7 +330,17 @@ section.inti img{
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     float: left;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    -webkit-transform: scale(1);
+    transform: scale(1);
 }
+
+section.inti img:hover{
+-webkit-transform: scale(1.05);
+transform: scale(1.05);
+}
+
 section.inti article{
     margin-top: 10px;
     background-color: white;
@@ -346,6 +356,11 @@ section.inti article h4 a{
     width: fit-content;
     margin: 30px 15px;
     float: left;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+section.inti article h4 a:hover{
+    font-size: large;
 }
 section.inti article p{
     font-size: 12px;
@@ -394,7 +409,7 @@ table.jenis td a{
     border-radius: 2px;
 }
 .bawah ul{
-    width: 100%;
+    width: fit-content;
     margin-left: 590px;
     display: inline-block;
 }

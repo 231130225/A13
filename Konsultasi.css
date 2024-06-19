@@ -340,11 +340,18 @@ section.inti ul li a:hover{
 }
 section.inti img{
     width: 250px;
-    height: 140px;
+    height: 200px;
     size: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+section.inti img:hover{
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 
@@ -366,6 +373,11 @@ section.inti article h4 a{
     color: #FFBA49;
     width: fit-content;
     margin: 15px 15px;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+section.inti article h4 a:hover{
+    font-size: large;
 }
 section.inti article p{
     font-size: 12px;
@@ -382,7 +394,7 @@ section.inti article b a{
     padding: 10px 30px;
     border-radius: 5px;
     margin: 15px;
-    margin-top: 40px;
+    margin-top: 20px;
     float: left;
     border: 1px solid transparent;
     -webkit-transition: .3s ease-in-out;
@@ -417,7 +429,7 @@ table.jenis td a{
     border-radius: 2px;
 }
 .bawah ul{
-    width: 100%;
+    width: fit-content;
     margin-left: 590px;
     display: inline-block;
 }
