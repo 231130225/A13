@@ -898,6 +898,9 @@ main p.judul span:hover{
 
 @media (max-width: 479px)
 {
+    section {
+        max-width: 479px!important;
+    }
     main section.fitur{
         margin-top: 50px;
     }
@@ -993,7 +996,7 @@ main p.judul span:hover{
     }
 
     main{
-        width: 470px;
+        width: 100%;
     }
     main .judul{
         font-size: 18px !important;
