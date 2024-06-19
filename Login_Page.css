@@ -130,9 +130,15 @@ body{
     font-size: 13px;
     outline: none;
 }
+.log-btn a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
 .log-btn:hover{
     text-decoration: underline;
     background-color: rgba(128,128,128,0.5);
+    transition: ease-in-out 200ms;
 }
 .container .register{
     font-size: 14px;
