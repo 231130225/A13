@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="donasi.css">
+    <link rel="stylesheet" href="Posting.css">
     <link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'>
-    <title>Anicare | Donasi</title>
+    <script src="https://kit.fontawesome.com/b6eafdb939.js" crossorigin="anonymous"></script>
+    <title>Anicare | Post</title>
 </head>
 <body>
     <header>
@@ -44,37 +45,19 @@
             </article>
     </header>
     <main>
-        <article>
-            <section class="search">
-                <input type="text" placeholder="Cari">
-                <span><a href="#">Cari</a></span>
-            </section>
-        </article>
-        <div class="gambar_utama"></div>
-        
-        <div class="dana"><p class="besar">Penggalangan Dana</p></div>
-        <section class="donasi">
-            <div class="container">
-                <div class="gambar"></div>
-                <p class="judul">Judul Donasi</p>
-                <button class="btn-donasi" onclick="pindah()">Donasi</button>
+        <section class="post">
+            <h1>Buat Postingan</h1>
+            <div><img src="Assets/profil.png" alt=""><p>Username</p></div>
+            <input type="text" placeholder="Ketik Berita">
+            <div>
+                <i class="fa-solid fa-image"></i>
+                <i class="fa-regular fa-face-laugh"></i>
+                <i class="fa-solid fa-location-dot"></i>
+                <i class="fa-solid fa-camera"></i>
             </div>
+            <p><a href="Post.html">Kirim</a></p>
         </section>
-        <section class="donasi2">
-            <div class="container">
-                <div class="gambar"></div>
-                <p class="judul">Judul Donasi</p>
-                <button class="btn-donasi" onclick="pindah()">Donasi</button>
-            </div>
-        </section>
-            
-        <script>
-            function pindah(){
-                location.replace("Transaksi.html");
-            }
-        </script>
     </main>
-
     <footer>
         <p>COPYRIGHT ©ANICARE 2024.</p>
     </footer>

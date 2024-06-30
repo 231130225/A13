@@ -74,8 +74,11 @@ header{
     height: 500px;
     float: none;
     background-repeat: no-repeat;
-    background-image: url(Assets/background.png);
-    background-size: cover;
+    background-image: url(Assets/background.png), url(Assets/bg\ header.png);
+    background-repeat: no-repeat, repeat;
+    background-size: auto 120%, 30%;
+    background-position: right, center;
+    background-color: #ffeccd;
 }
 
 
@@ -196,17 +199,19 @@ header li a:hover{
 
 header span a{
     float: right;
-    height: fit-content;
-    margin: 0;
-    padding: 0;
-    line-height: 0;
-    margin-top: 25px;
+    color: white;
+    background-color: #FFBA49;
+    border: 1px solid transparent;
+    padding: 8px 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
-header span a img{
-    width: 50px;
-    height: 50px;
-    margin: 0;
-    padding: 0;
+header span a:hover{
+    background-color: transparent;
+    color: #FFBA49;
+    border: 1px solid #FFBA49;
 }
 
 header p.lanjut a{
@@ -216,7 +221,7 @@ header p.lanjut a{
     background-color: rgb(255, 184, 53);
     width: 200px;
     padding: 25px 10px;
-    border-radius: 25px;
+    border-radius: 15px;
     border: 1px solid transparent;
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
@@ -227,8 +232,6 @@ header p.lanjut a:hover{
     background-color: white;
     color: #FFBA49;
     border: 1px solid#FFBA49;
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
 }
 
 
@@ -344,10 +347,9 @@ section.produk{
     background-image: url(Assets/back.png);
     background-size: cover;
     background-position: center;
-    background-color: #ffeccd;
     border-top-left-radius: 200px;
     border-bottom-right-radius: 200px;
-    height: 400px;
+    height: 500px;
     position: relative;
 }
 section.produk img{
@@ -472,7 +474,6 @@ section.artikel img{
     
 }
 section.artikel{
-    background-image: url(Assets/back.png);
     background-size: cover;
     background-position: center;
     background-color: #ffeccd;
@@ -561,11 +562,9 @@ main p.judul span a{
 main section.dokter{
     background-image: url(Assets/back.png);
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
-    background-color: #ffeccd;
-    border-top-left-radius: 200px;
-    border-bottom-right-radius: 200px;
-    height: 400px;
+    height: 500px;
     position: relative;
 }
 main section.dokter article.dokter img{

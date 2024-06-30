@@ -40,7 +40,7 @@
                     <li><a href="Store.html">Store</a></li>
                     <li><a href="About Us.html">About Us</a></li>
                 </ul>
-                <span><a href="Login_Page.html"><img src="Assets/profil.png" alt="Profil"></a></span>
+                <span><a href="Login_Page.html">Login</a></span>
             </article>
     </header>
     <main>
@@ -51,20 +51,24 @@
             <p class="judul">Pilih Kategori Hewan-mu<span>*</span></p>
             <table>
                 <tr>
-                    <td><a href="#"><img src="Assets/icon-anj.png" alt="anjing"><p>Anjing</p></a></td>
-                    <td><a href="#"><img src="Assets/icon-kuc.png" alt="kucing"><p>Kucing</p></a></td>
-                    <td><a href="#"><img src="Assets/icon-bur.png" alt="burung"><p>Burung</p></a></td>
+                    <td><a href="#" onclick="pilih(this)"><img src="Assets/icon-anj.png" alt="anjing"><p>Anjing</p></a></td>
+                    <td><a href="#" onclick="pilih(this)"><img src="Assets/icon-kuc.png" alt="kucing"><p>Kucing</p></a></td>
+                    <td><a href="#" onclick="pilih(this)"><img src="Assets/icon-bur.png" alt="burung"><p>Burung</p></a></td>
                 </tr>
                 <tr>
-                    <td><a href="#"><img src="Assets/icon-ikn.png" alt="ikan"><p>Ikan</p></a></td>
-                    <td><a href="#"><img src="Assets/icon-ter.png" alt="hewan ternak"><p>Ternak</p></a></td>
-                    <td><a href="#"><img src="Assets/icon-rep.png" alt="reptil"><p>Reptil</p></a></td>
+                    <td><a href="#" onclick="pilih(this)"><img src="Assets/icon-ikn.png" alt="ikan"><p>Ikan</p></a></td>
+                    <td><a href="#" onclick="pilih(this)"><img src="Assets/icon-ter.png" alt="hewan ternak"><p>Ternak</p></a></td>
+                    <td><a href="#" onclick="pilih(this)"><img src="Assets/icon-rep.png" alt="reptil"><p>Reptil</p></a></td>
                 </tr>
+                <script>
+                    function pilih(element){
+                        element.style.color = "#FFBA49";
+                    }
+                </script>
             </table>
         </section>
         <section class="inti">
-            <form action="#" method="post">
-                <p>Silahkan isi form berikut untuk mengajukan pickup perliharaan anda</p>
+            <p>Silahkan isi form berikut untuk mengajukan pickup perliharaan anda</p>
                 <table>
                     <tr>
                         <td>No Telepon<span>*</span></td>
@@ -97,11 +101,15 @@
                         <td class="file"><input type="file" id="myFile" name="filename"></td>
                     </tr>
                     <tr>
-                        <td><button type="submit">Kirim Pengajuan</button></td>
+                        <td><button class="btn" onclick="berhasil()">Kirim Pengajuan</button></td>
                     </tr>
                 </table>
-            </form>
         </section>
+        <script>
+            function berhasil(){
+                alert("Berhasil dikirim")
+            }
+        </script>
     </main>
     <footer>
         <p>COPYRIGHT ©ANICARE 2024.</p>

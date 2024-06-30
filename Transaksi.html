@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="donasi.css">
+    <link rel="stylesheet" href="Transaksi.css">
     <link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/b6eafdb939.js" crossorigin="anonymous"></script>
     <title>Anicare | Donasi</title>
 </head>
 <body>
@@ -44,37 +45,25 @@
             </article>
     </header>
     <main>
-        <article>
-            <section class="search">
-                <input type="text" placeholder="Cari">
-                <span><a href="#">Cari</a></span>
-            </section>
-        </article>
-        <div class="gambar_utama"></div>
-        
-        <div class="dana"><p class="besar">Penggalangan Dana</p></div>
-        <section class="donasi">
-            <div class="container">
-                <div class="gambar"></div>
-                <p class="judul">Judul Donasi</p>
-                <button class="btn-donasi" onclick="pindah()">Donasi</button>
-            </div>
-        </section>
-        <section class="donasi2">
-            <div class="container">
-                <div class="gambar"></div>
-                <p class="judul">Judul Donasi</p>
-                <button class="btn-donasi" onclick="pindah()">Donasi</button>
-            </div>
-        </section>
-            
-        <script>
-            function pindah(){
-                location.replace("Transaksi.html");
-            }
-        </script>
-    </main>
+        <section class="post">
+            <h1>Donasi</h1>
+            <input type="text" placeholder="masukkan nominal">
 
+            <p>Metode Pembayaran</p>
+            <div class="bca">
+                <img src="Assets/bca.png" alt=""><input type="text" placeholder="Nomor Rekening">
+            </div>
+
+            <p>Silahkan isi data berikut</p>
+            <p>Nama Lengkap</p>
+            <input type="text" name="" id="">
+            <p>No Telepon</p>
+            <input type="text" name="" id="">
+            <p>Pesan(opsional)</p>
+            <input type="text" name="" id="" placeholder="Pesan">
+            <p><a href="Donasi.html">Kirim</a></p>
+        </section>
+    </main>
     <footer>
         <p>COPYRIGHT ©ANICARE 2024.</p>
     </footer>

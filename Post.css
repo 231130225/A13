@@ -185,17 +185,20 @@ header li a:hover{
 
 header span a{
   float: right;
-  height: fit-content;
-  margin: 0;
-  padding: 0;
-  line-height: 0;
-  margin-top: 25px;
+  color: white;
+  background-color: #FFBA49;
+  border: 1px solid transparent;
+  padding: 8px 20px;
+  border-radius: 5px;
+  margin-right: 20px;
+  margin-top: 30px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
-header span a img{
-  width: 50px;
-  height: 50px;
-  margin: 0;
-  padding: 0;
+header span a:hover{
+  background-color: transparent;
+  color: #FFBA49;
+  border: 1px solid #FFBA49;
 }
 a{
   text-decoration: none;
@@ -268,14 +271,20 @@ main article.dua section div.tiga{
   margin-left: 500px;
   width: 200px;
   margin-top: 50px;
-  background-color: white;
-  color: #FFBA49;
   text-align: center;
   line-height: 50px;
   border-radius: 10px;
   -webkit-transition: .3s ease-in-out;
   transition: .3 ease-in-out;
 }
+main article.dua section div.tiga a{
+  background-color: white;
+  color: #FFBA49;
+  padding: 15px 20px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+}
+
 
 main article.satu section.satu div.tiga{
   float: left;
@@ -330,7 +339,7 @@ main article.satu section.satu div.tiga img.tiga:hover{
   height: 45px;
 }
 
-main article.dua section div.tiga:hover{
+main article.dua section div.tiga a:hover{
   background-color: #FFBA49;
   border: 1px solid white;
   color: white;

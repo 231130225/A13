@@ -183,6 +183,7 @@ header li a:hover{
     color: #FFBA49
 }
 
+
 header span a{
     float: right;
     color: white;
@@ -212,13 +213,12 @@ li{
 
 
 
-
-
-
+/* Main section */
 
 main{
     margin: 0 auto;
-    width: 1200px;
+    max-width: 1200px;
+    padding-top: 0;
 
 }
 main section.search{
@@ -246,204 +246,33 @@ main section.search span a:hover{
     border: 1px solid #FFBA49;
     color: #FFBA49;
 }
-
-main p.judul{
-    font-weight: bold;
-    color: #535353;
-    font-size: 22px;
-    margin-left: 20px;
-    text-shadow: 2px 2px white;
-}
-
-
-
-main td{
-    width: 100px;
-    margin-bottom: 100px;
-    height: 150px;
+section.atas{
     text-align: center;
-}
-main td a{
-    color: #535353;
-    -webkit-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
-}
-main td a:hover{
-    color: #FFBA49
+    background-color: #FFF4E4;
+    height: 300px;
 }
 
-
-
-main td img{
-    width: 50px;
-    height: 50px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 2px solid black;
-    -webkit-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
-    -webkit-transform: scale(1);
-    transform: scale(1);
+section.isi{
+    text-align: justify;
 }
-main td img:hover{
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-}
-
-main section{
-    float: left;
-}
-
-main section.kategori{
-    width: 300px;
-}
-
-
-
-
-
-
-
-
-
-main section.inti{
-    width: 870px;
-    padding-left: 20px;
-    align-items: center;
-    border-left: 1px solid gray;
-}
-section.inti ul{
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 20px;
-}
-section.inti ul li a{
-    padding: 0 10px;
-    color: #535353;
-    
-}
-section.inti ul li a:hover{
+section.isi h1{
     color: #FFBA49;
 }
-section.inti img{
-    width: 250px;
-    height: 180px;
-    size: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    -webkit-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-}
-
-section.inti img:hover{
--webkit-transform: scale(1.05);
-transform: scale(1.05);
-}
-
-
-
-
-
-
-section.inti article{
-    margin-top: 10px;
-    background-color: white;
-    width: 250px;
-    height: 400px;
-    border-radius: 20px;
-    float: left;
-    margin: 0 20px;
-    margin-bottom: 40px;
-    box-shadow: 1px 2px lightgray;
-}
-section.inti article h4 a{
-    color: #535353;
-    width: fit-content;
-    margin: 15px 15px;
-    -webkit-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
-}
-section.inti article h4 a:hover{
-    color: #FFBA49;
-}
-section.inti article p{
-    font-size: 12px;
-    color: #FFBA49;
-    width: fit-content;
-    padding: 3px;
+section.isi p{
+    color: #818181;
     font-size: 16px;
-    border-radius: 2px;
-    margin: 10px 15px;
+    margin: 5px auto;
 }
-section.inti article b a{
-    color: white;
-    background-color: #FFBA49;
-    padding: 10px 30px;
-    border-radius: 5px;
-    margin: 15px;
-    margin-top: 30px;
-    float: left;
-    border: 1px solid transparent;
-    -webkit-transition: .3s ease-in-out;
-    transition: .3 ease-in-out;
+section.isi p.judul{
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 2px 2px white;
+    margin-top: 25px;
 }
-section.inti article b a:hover{
+section.isi td{
     color: #FFBA49;
-    background-color: white;
-    border: 1px solid #FFBA49;
+    width: 110px;
 }
-
-
-
-
-
-
-
-table.jenis {
-    width: 5px;
-    padding: 5px;
-}
-table.jenis td{
-    width: 5px;
-    height: 5px;
-    font-size: 10px;
-}
-table.jenis td a{
-    margin: 0 2px;
-    background-color: #FFE3B4;
-    padding: 3px;
-    margin-left: 8px;
-    color: #535353;
-    border-radius: 2px;
-}
-.bawah ul{
-    width: fit-content;
-    margin-left: 590px;
-    display: inline-block;
-}
-.bawah ul li a{
-    color: #535353;
-    padding: 10px;
-    margin: 10px;
-}
-.bawah ul li a.utama{
-    color: #FFBA49;
-}
-.bawah ul li a:hover{
-    color: #FFBA49;
-}
-
-
-
-
-
-header li a:hover{
-    color: rgb(255, 184, 53);
-}
-
 
 
 /*RESPONSIF*/
@@ -472,46 +301,8 @@ header li a:hover{
     main{
         width: 900px;
     }
-    main .judul{
-        font-size: 22px !important;
-        margin-left: 15px;
-    }
-    .search input{
-        width: 80% !important;
-    }
-    main .kategori{
-        margin-left: 25px;
-    }
-    main td a{
-        width: 95px;
-    }
-    main td{
-        width: 80px;
-    }
-    main section.inti{
-        width: 550px !important;
-        margin-right: 0;
-        padding-right: 0;
-    }
-    main section.inti img{
-        width: 220px !important;
-        height: 150px !important;
-    }
-    section.inti article{
-        width: 220px;
-        height: 360px;
-    }
-    section.inti article b a{
-        color: white;
-        background-color: #FFBA49;
-        padding: 10px 30px;
-        border-radius: 5px;
-        margin: 15px;
-        margin-top: 20px;
-        display: inline-block
-    }
-    .bawah ul{
-        margin-left: 420px;
+    section.dokter b a{
+        margin-left: 310px;
     }
 }
 
@@ -554,47 +345,15 @@ header li a:hover{
         padding: 0;
     }
 
-    main{
-        width: 95%;
-    }
-    main .judul{
-        font-size: 18px !important;
-        margin-left: 15px;
-    }
     .search input{
         width: 80% !important;
     }
-    main .kategori{
-        margin-left: 20px;
-        width: 250px !important;
-    }
-    main td a{
-        width: 95px;
-    }
-    main td{
-        width: 70px;
-    }
 
-    main section.inti{
-        width: 520px !important;
-        margin-right: 0;
-        padding-right: 0;
+    main{
+        width: 95%;
     }
-    main section.inti img{
-        width: 220px !important;
-        height: 150px !important;
-    }
-    section.inti article{
-        width: 220px;
-        height: 350px;
-    }
-    section.inti article b a{
-        color: white;
-        margin-top: 20px;
-        display: inline-block
-    }
-    .bawah ul{
-        margin-left: 380px;
+    section.dokter b a{
+        margin-left: 280px;
     }
 }
 
@@ -635,13 +394,6 @@ header li a:hover{
         padding: 0;
     }
 
-    main{
-        width: 95%;
-    }
-    main .judul{
-        font-size: 16px !important;
-        margin-left: 15px;
-    }
     section.search{
         margin: 0 !important;
     }
@@ -649,49 +401,17 @@ header li a:hover{
         width: 70% !important;
         margin: 0 !important;
     }
-    main .kategori{
-        margin: 0;
-        width: 100% !important;
-    }
-    main td a{
-        width: 95px;
-    }
-    main td a p{
-        margin-top: 0;
-    }
-    main td{
-        width: 70px;
-        margin: 0 auto;
-        height: fit-content;
-        width: 1000px;
-        
-    }
 
-    main section.inti{
-        width: 100% !important;
-        margin-right: 0;
-        padding-right: 0;
-        border: none;
-        padding: 0 !important;
-        margin: 0 !important;
-    }
-    main section.inti img{
-        width: 200px !important;
-        height: 140px !important;
-    }
-    section.inti article{
-        width: 200px;
-        height: 340px;
-        margin: 25px 12px;
-        padding: 0;
 
+
+
+    main{
+        width: 95%;
     }
-    section.inti article b a{
-        color: white;
-        margin-top: 20px;
-        display: inline-block
+    img{
+        width: 300px !important;
     }
-    .bawah ul{
-        margin-left: 50px;
+    section.dokter b a{
+        margin-left: 120px;
     }
 }

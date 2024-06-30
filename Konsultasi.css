@@ -185,17 +185,20 @@ header li a:hover{
 
 header span a{
     float: right;
-    height: fit-content;
-    margin: 0;
-    padding: 0;
-    line-height: 0;
-    margin-top: 25px;
+    color: white;
+    background-color: #FFBA49;
+    border: 1px solid transparent;
+    padding: 8px 20px;
+    border-radius: 5px;
+    margin-right: 20px;
+    margin-top: 30px;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
-header span a img{
-    width: 50px;
-    height: 50px;
-    margin: 0;
-    padding: 0;
+header span a:hover{
+    background-color: transparent;
+    color: #FFBA49;
+    border: 1px solid #FFBA49;
 }
 a{
     text-decoration: none;
@@ -342,6 +345,7 @@ section.inti img{
     width: 250px;
     height: 200px;
     size: 100%;
+    background-color: #FFE3B4;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     -webkit-transition: 0.3s ease-in-out;
@@ -505,7 +509,10 @@ table.jenis td a{
     }
     main section.inti img{
         width: 220px !important;
-        height: 140px !important;
+        height: 160px !important;
+    }
+    h4{
+        margin: 15px 0px;
     }
     section.inti article{
         width: 220px;
@@ -589,10 +596,6 @@ table.jenis td a{
         width: 520px !important;
         margin-right: 0;
         padding-right: 0;
-    }
-    main section.inti img{
-        width: 220px !important;
-        height: 140px !important;
     }
     section.inti article{
         width: 220px;
@@ -687,7 +690,7 @@ table.jenis td a{
     }
     main section.inti img{
         width: 200px !important;
-        height: 140px !important;
+        height: 150px !important;
     }
     section.inti article{
         width: 200px;
