@@ -506,6 +506,7 @@ main p.besar{
     }
     .donasi{
         width: 210px;
+        margin-right: 25px;
     }
     .donasi .gambar{
         width: 210px;
