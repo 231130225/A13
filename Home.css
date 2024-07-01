@@ -74,13 +74,19 @@ header{
     height: 500px;
     float: none;
     background-repeat: no-repeat;
-    background-image: url(Assets/background.png), url(Assets/bg\ header.png);
-    background-repeat: no-repeat, repeat;
-    background-size: auto 120%, 30%;
-    background-position: right, center;
-    background-color: #ffeccd;
+    background-image: url(Assets/depan.png) ,url(Assets/kucing.gif), url(Assets/anjing.gif), url(Assets/awan.gif), url(Assets/awan.gif), url(Assets/background.png);
+    background-repeat: no-repeat ,no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: cover ,auto 25%, auto 30%, auto 60%, auto 60%, auto 80%;
+    background-position: bottom ,bottom right, bottom left ,top right, top left, right;
+    background-color: #f6ddb4;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;;
 }
 
+@keyframes kucing{
+    0%{ background-position: bottom ,bottom right,top right, top left, right;}
+    100%{ background-position: bottom ,bottom left,top right, top left, right;}
+}
 
 header section{
     width: 1048px;
@@ -961,6 +967,7 @@ main p.judul span:hover{
     header{
         width: 100% !important;
         height: 350px;
+        background-position: bottom ,bottom right, bottom left ,top right, top left, center;
     }
     header span{
         float: left;
@@ -1026,7 +1033,7 @@ main p.judul span:hover{
     main .judul{
         font-size: 18px !important;
         width: 380px;
-        height: 100px;
+        height: 50px;
     }
     main .judul span{
         float: none !important;
@@ -1070,59 +1077,66 @@ main p.judul span:hover{
     
 
     main section.produk{
-        height: 1150px;
-        width: 430px !important;
-        align-items: center;
-        border-radius: none !important;
-        background-image: url(Assets/back2.png) !important;
+        height: 280px;
+        width: 450px !important;
+        padding-left: 0;
+        background-size: 100%;
+        background-repeat: no-repeat;
     }
     main section.produk article.produk{
-        width: 300px !important;
-        height: 300px !important;    
-        margin-left: 60px !important;
+        width: 140px !important;
+        height: 140px !important;
+        margin: 5px;
     }
     main section.produk img{
-        width: 300px !important;
-        height: 300px !important;
+        width: 140px !important;
+        height: 140px !important;
     }
     main section.produk h4 a{
-        margin-top: 180px !important;
+        margin-top: 80px !important;
+        font-size: 14px;
+        height: 60px;
     }
     main section.produk p.bintang img{
-        width: 110px !important;
-        height: 20px !important;
+        width: 100px !important;
+        height: 15px !important;
     }
 
 
     main section.artikel{
-        height: 1150px;
-        width: 430px !important;
-        align-items: center;
-        border-top-left-radius: 0;
-        border-bottom-right-radius: 0;
+        height: 300px;
+        width: 450px !important;
+        padding-left: 0;
+        background-size: 100%;
+        background-repeat: no-repeat;
         background-image: url(Assets/back2.png);
         margin-bottom: 20px;
         
     }
     section.artikel img{
+        width: 120px;
+        height: 90px;
         float: none;
     }
     section.artikel h4{
         float: none !important;
         padding: 0 !important;
         text-align: justify;
+        font-size: 10px;
     }
-    section.artikel p{
+    section.artikel .artikel p{
         float: none !important;
         padding: 0 !important;
+        font-size: 8px !important;
     }
     main section.artikel article{
-        width: 250px;
-        height: 300px;
-        margin-left: 80px;
+        width: 120px;
+        height: 200px;
+        margin: 15px;
+        float: left;
     }
     section.artikel article h4:hover{
-        font-size: 17px;
+        font-size: 10px;
     }
     section.artikel article img:hover{
         -webkit-transform: scale(1.08);

@@ -69,45 +69,57 @@
         </section>
         <section class="inti">
             <p>Silahkan isi form berikut untuk mengajukan pickup perliharaan anda</p>
+            <form action="">
                 <table>
                     <tr>
                         <td>No Telepon<span>*</span></td>
                     </tr>
                     <tr>
-                        <td><input type="text"></td>
+                        <td><input type="text" id="no" required></td>
                     </tr>
                     <tr>
                         <td>Nama<span>*</span></td>
                     </tr>
                     <tr>
-                        <td><input type="text"></td>
+                        <td><input type="text" id="nama" required></td>
                     </tr>
                     <tr>
                         <td>Lokasi Penjemputan<span>*</span></td>
                     </tr>
                     <tr>
-                        <td><input type="text"></td>
+                        <td><input type="text" id="lokasi" required></td>
                     </tr>
                     <tr>
                         <td>E-mail<span>*</span></td>
                     </tr>
                     <tr>
-                        <td><input type="text"></td>
+                        <td><input type="email" id="email" required></td>
                     </tr>
                     <tr>
                         <td>Upload foto/video hewan peliharaan mu<span>*</span></td>
                     </tr>
                     <tr>
-                        <td class="file"><input type="file" id="myFile" name="filename"></td>
+                        <td class="file"><input type="file" id="myFile" name="filename" required></td> 
                     </tr>
                     <tr>
                         <td><button class="btn" onclick="berhasil()">Kirim Pengajuan</button></td>
                     </tr>
                 </table>
+            </form>
         </section>
         <script>
             function berhasil(){
-                alert("Berhasil dikirim")
+                let no = document.getElementById("no").value;
+                let nama = document.getElementById("nama").value;
+                let lokasi = document.getElementById("lokasi").value;
+                let email = document.getElementById("email").value;
+                let file = document.getElementById("myFile").value;
+                if(no == "", nama == "", lokasi == "", email == "", file == ""){
+                
+                }else{
+                    alert("Berhasil dikirim");
+                }
+                
             }
         </script>
     </main>
