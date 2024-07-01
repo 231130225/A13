@@ -320,7 +320,7 @@ main p.besar{
     border: 1px solid #FFBA49;
 }
 .donasi2{
-    float: inline-end;
+    float: right;
     width: 500px;
     height: 300px;
     background: #FFFFFF;
