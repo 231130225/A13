@@ -347,8 +347,6 @@ section.produk{
     background-image: url(Assets/back.png);
     background-size: cover;
     background-position: center;
-    border-top-left-radius: 200px;
-    border-bottom-right-radius: 200px;
     height: 500px;
     position: relative;
 }
@@ -1054,6 +1052,7 @@ main p.judul span:hover{
         height: 1100px;
         width: 430px !important;
         align-items: center;
+        background-image: url(Assets/back2.png);
         
     }
     main section.dokter article.dokter{
@@ -1074,6 +1073,8 @@ main p.judul span:hover{
         height: 1150px;
         width: 430px !important;
         align-items: center;
+        border-radius: none !important;
+        background-image: url(Assets/back2.png) !important;
     }
     main section.produk article.produk{
         width: 300px !important;
@@ -1097,6 +1098,11 @@ main p.judul span:hover{
         height: 1150px;
         width: 430px !important;
         align-items: center;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 0;
+        background-image: url(Assets/back2.png);
+        margin-bottom: 20px;
+        
     }
     section.artikel img{
         float: none;
