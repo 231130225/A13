@@ -272,7 +272,7 @@ main p.besar{
 
 
 .donasi{
-    display: inline-block;
+    float: left;
     width: 500px;
     height: 300px;
     background: #FFFFFF;
@@ -505,19 +505,19 @@ main p.besar{
         width: 455px;
     }
     .donasi{
-        width: 215px;
+        width: 210px;
     }
     .donasi .gambar{
-        width: 215px;
+        width: 210px;
     }
     .donasi2{
-        width: 215px;
+        width: 210px;
     }
     .donasi2 .gambar{
-        width: 215px;
+        width: 210px;
     }
     .btn-donasi{
         width: 200px;
-        margin: 0 7px;
+        margin: 0 6px;
     }
 }
