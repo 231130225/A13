@@ -316,7 +316,14 @@ main section{
 main section.kategori{
     width: 300px;
 }
-
+main section.kategori{
+    overflow: auto;
+    position: -webkit-sticky;
+    position: sticky;
+    height: 100vh;
+    min-height: 200px;
+    top: 10px;
+}
 
 
 
@@ -725,6 +732,12 @@ table.jenis td a{
         width: 1000px;
     }
 
+    main section.kategori{
+        overflow: none !important;
+        position: relative !important;
+        position: none;
+        height: fit-content;
+    }
     
     main section.inti{
         width: 100% !important;
